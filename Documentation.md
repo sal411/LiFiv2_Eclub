@@ -1,1 +1,20 @@
+ANALYSIS OF QUADRATURE PHASE SHIFT KEYING(QPSK)
+Phase shift Keying
+Phase shift keying is a digital modulation scheme that conveys data by changing or modulating the phase of a reference signal or carrier wave.
+every digital modulation scheme uses a finite number of distinct signals to represent digital data. PSK uses a finite number of phases; each assigned a unique pattern of binary digits. Usually, each phase encodes in equal number of bits. each pattern of bits form the symbol that is represented by the particular phase. the modulator is designed specifically for the symbol set used by the modulator and it determines the phase of the received signal and Maps it back to the symbol it represents. Thus it recovers the original data. this requires the receiver to be able to compare the phase of the received signal to a reference signal.
+Alternatively instead of using the bit patterns to set the phase of the wave it can be used to change it by a specific amount. the modulator then determines the change in phase of received signal rather than the phase itself. Since this is Kim depends on the difference between successive phases it is termed as differential phase shift keying. BPSK can be significantly simpler to implement then ordinary PSK since there is no need for the demodulator to have copy of the different signal to determine the exact phase of the received signal. in exchange it produces more erroneous demodulation.
+In PSK the constellation points chosen are usually positioned with Uniform angular spacing around the circle. this gives maximum phase separation between adjacent point and thus the best immunity to corruption. They are positioned on a circle so that they can all be transmitted with the same energy. in this way the model of the complex number they represent will be seen and thus so will be the amplitudes needed for the cosine and sine waves. 2 common examples are binary phase shift keying(BPSK) and quadrature phase shift key (QPSK).
+
+Binary phase shift keying (BPSK)
+PBS kids is simplest form of phase shift keying or PSK. it uses 2 phases which are separated by 180 degree. it does not particularly matter where the constellation points are positioned. This modulation is the most robust of all the PSKs since it takes the highest level of noise or distortion to make the demodulator reach an incorrect decision. It is however only able to modulate at 1 bit/symbol so it is unsuitable for high data rate applications where bandwidth is limited.
+
+QPSK Modulation
+   Sometimes this is known as quadriphase PSK, 4-PSK, or 4-QAM. (Although the root concepts of QPSK and 4-QAM are different, the resulting modulated radio waves are exactly the same.) QPSK uses four points on the constellation diagram, equispaced around a circle. With four phases, QPSK can encode two bits per symbol, shown in the diagram with Gray coding to minimize the bit error rate (BER) – sometimes misperceived as twice the BER of BPSK.
+   
+https://drive.google.com/file/d/1Yu3mk1_3N_7QPHxer8-eMbQ5xccCbFN3/view?usp=sharing
+Constellation diagram for QPSK with Gray coding. Each adjacent symbol only differs by one bit.
+
+The mathematical analysis shows that QPSK can be used either to double the data rate compared with a BPSK system while maintaining the same bandwidth of the signal, or to maintain the data-rate of BPSK but halving the bandwidth needed. In this latter case, the BER of QPSK is exactly the same as the BER of BPSK – and believing differently is a common confusion when considering or describing QPSK. The transmitted carrier can undergo numbers of phase changes.
+
+Given that radio communication channels are allocated by agencies such as the Federal Communications Commission giving a prescribed (maximum) bandwidth, the advantage of QPSK over BPSK becomes evident: QPSK transmits twice the data rate in a given bandwidth compared to BPSK - at the same BER. The engineering penalty that is paid is that QPSK transmitters and receivers are more complicated than the ones for BPSK.
 
